@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Comic Sans MS', 'Poppins', cursive;
+  font-family: 'Montserrat', sans-serif;
   background: pink;
   display: flex;
   justify-content: center;
@@ -15,6 +15,25 @@ body {
   text-align: center;
 }
 
+.question {
+  font-size: 2rem;
+  font-weight: 600; /* Semi Bold */
+}
+
+.sub {
+  font-size: 1rem;
+  font-weight: 400; /* Regular */
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.mensaje {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
 .container, .respuesta {
   max-width: 500px;
   width: 100%;
@@ -105,4 +124,14 @@ button:hover {
 @keyframes fadeIn {
   from { opacity: 0; transform: scale(0.8); }
   to { opacity: 1; transform: scale(1); }
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.question,
+.mensaje,
+button {
+  font-weight: 600;
 }
