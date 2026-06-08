@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Poppins', cursive;
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.container, .respuesta {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.gif {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e60073;
+  margin-bottom: 15px;
+  animation: aparecer 2s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sub {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.yes {
+  background: #ff4da6;
+  color: white;
+}
+
+.no {
+  background: #999;
+  color: white;
+  position: relative;
+}
+
+.respuesta {
+  display: none;
+}
+
+.gifRespuesta {
+  width: 100%;
+  max-width: 280px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  animation: fadeIn 2s ease;
+}
+
+.mensaje {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff0066;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
